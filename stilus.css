@@ -1,0 +1,86 @@
+main{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "h h h"
+                        "n n n"
+                        "ar ar ar";
+}
+
+nav {
+    grid-area: n;
+    background-color: firebrick;
+}   
+header {
+    background-color: black;
+    grid-area: h;
+}
+
+nav>ul {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+
+nav li {
+    background-color: gray;
+    border: solid black 1px;
+    margin: 3px;
+    border-radius: 10%;
+    text-align: center; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightblue;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  width: 190px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+    background-color: gray;
+    color: white;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+}
+
+.kerdes {
+    border: solid black;
+    border-radius: 10%;
+    padding: 10px;
+    position: absolute;
+    margin-top: 30px;
+    width: 200px;
+    -webkit-box-shadow: 5px 5px 11px 11px #000000; 
+    box-shadow: 5px 5px 11px 11px #000000;
+    left: 25%;
+    bottom: 50%;
+    
+}
+
+article {
+    grid-area: ar;
+    background-color: blanchedalmond;
+}
+
